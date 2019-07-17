@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %} 
+
+{% block header %}
+    <h1>Home Page</h1>
+    <hr width="1250" align="left" size="4" /> 
+{% endblock header %} 
+
+{% block content %}
+    <div class="intro">
+        <h3><p>Welcome Folks !!!</p></h3><br>
+        <h3><p>This is a simple site designed using python/django in order to provide you all some informative blog posts about technology.</p></h3>
+    </div><br>
+    <div class="clr"></div>
+    <div class="link-to-blogs">
+        <h2><a href="{% url 'post_list' %}">Blogs >></a></h2><br>
+    </div>
+{% endblock content %} 
+
+{% block footer %}
+    <div class="date">
+        <hr width="1240" align="left" size="4" />
+        <p>
+            <h2>{{ date }}</h2>
+        </p>
+    </div>
+{% endblock footer %}
